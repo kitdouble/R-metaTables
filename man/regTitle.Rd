@@ -11,10 +11,10 @@ regTitle(label, headings = NULL, append.table = FALSE)
 
 \item{headings}{Set to NULL by default. Can be used to specify custom headings. The default is headings are "Var","b","SE","ciL","ciU", "p"}
 
-\item{append.table}{Determines whether to append to an exisitng table. By default it is seet to false and will create a new table or overide the existing object. To append specify the existing table object}
+\item{append.table}{Determines whether to append to an exisitng table. By default it is set to false and will create a new table or overide the existing object. To append specify the existing table object}
 }
 \value{
-A matrix of the infile
+A table with a single row with the label or a label appended to existing table
 }
 \description{
 This function allows you to add a single line to a meta-regression table with a label for identifying.

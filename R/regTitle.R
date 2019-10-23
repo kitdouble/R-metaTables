@@ -5,8 +5,8 @@
 #'
 #' @param label The label that will be added to the table
 #' @param headings Set to NULL by default. Can be used to specify custom headings. The default is headings are "Var","b","SE","ciL","ciU", "p"
-#' @param append.table Determines whether to append to an exisitng table. By default it is seet to false and will create a new table or overide the existing object. To append specify the existing table object
-#' @return A matrix of the infile
+#' @param append.table Determines whether to append to an exisitng table. By default it is set to false and will create a new table or overide the existing object. To append specify the existing table object
+#' @return A table with a single row with the label or a label appended to existing table
 #' @export
 
 regTitle <- function(label, headings = NULL, append.table = FALSE){
