@@ -1,0 +1,15 @@
+Package: metaTables
+Type: Package
+Title: Run meta-regressions and sub-groups analysis on lists of variables and produce tables for publication.
+Version: 0.1.0
+Author: Kit S. Double
+Maintainer: Kit S. Double <kit.double@education.ox.ac.uk>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports:
+	robumeta
+
