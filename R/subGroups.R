@@ -20,10 +20,10 @@ subGroups <- function(append.table = FALSE, data = NULL, grouping.factor = NULL,
 
   if(is.null(label))  {label = grouping.factor}
 
-  if(isFALSE(append.table)) {newTable <- subTitle(label = label, ...)  }
+  if(isFALSE(append.table)) {newTable <- subTitle(headings = headings, type = type, label = label, ...)  }
 
 
-  if(!isFALSE(append.table)) {newTable <- rbind(append.table, subTitle(label = label, ...))  }
+  if(!isFALSE(append.table)) {newTable <- rbind(append.table, subTitle(headings = headings, type = type, label = label, ...))  }
 
   subgroups <- unique(data[,grouping.factor])
 

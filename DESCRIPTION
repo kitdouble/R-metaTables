@@ -1,7 +1,7 @@
 Package: metaTables
 Type: Package
 Title: Run meta-regressions and sub-groups analysis on lists of variables and produce tables for publication.
-Version: 0.2.0
+Version: 0.3.0
 Author: Kit S. Double
 Maintainer: Kit S. Double <kit.double@education.ox.ac.uk>
 Description: More about what it does (maybe more than one line)

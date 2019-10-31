@@ -6,7 +6,7 @@
 \usage{
 subGroups(append.table = FALSE, data = NULL, grouping.factor = NULL,
   es = NULL, vi = NULL, study.id = NULL, label = NULL,
-  modelweights = "CORR", ...)
+  modelweights = "CORR", type = NULL, headings = NULL, ...)
 }
 \arguments{
 \item{append.table}{Determines whether to append to an exisitng table. By default it is set to FALSE and will create a new table or overide the existing object. To append specify the existing table object}
@@ -20,6 +20,10 @@ subGroups(append.table = FALSE, data = NULL, grouping.factor = NULL,
 \item{label}{The labels that will be added to the top of each table section. The grouping.factor variable name is used if unspecified}
 
 \item{modelweights}{Either "CORR" or "HEIR" implmentation of Robust Variance Estimation. "CORR" is set as default}
+
+\item{type}{Either "cor" or "MD". Determines the headings used if not user specified.}
+
+\item{headings}{Set to NULL by default. Can be used to specify custom headings. If unspecified then headings are determined by the type argument}
 
 \item{yi}{The variance in the effect size}
 }
