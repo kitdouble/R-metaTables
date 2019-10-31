@@ -7,6 +7,8 @@
 #' @param es The effect size variable
 #' @param yi The variance in the effect size
 #' @param study.id The study identifier
+#' @param headings Set to NULL by default. Can be used to specify custom headings. If unspecified then headings are determined by the type argument
+#' @param type Either "cor" or "MD". Determines the headings used if not user specified.
 #' @param label The labels that will be added to the top of each table section. The grouping.factor variable name is used if unspecified
 #' @param modelweights Either "CORR" or "HEIR" implmentation of Robust Variance Estimation. "CORR" is set as default
 #' @param append.table Determines whether to append to an exisitng table. By default it is set to FALSE and will create a new table or overide the existing object. To append specify the existing table object
@@ -14,7 +16,7 @@
 #' @export
 #'
 #'
-subGroups <- function(append.table = FALSE, data = NULL, grouping.factor = NULL, es = NULL, vi = NULL, study.id = NULL, label = NULL, modelweights = "CORR", ...){
+subGroups <- function(append.table = FALSE, data = NULL, grouping.factor = NULL, es = NULL, vi = NULL, study.id = NULL, label = NULL, modelweights = "CORR", type = NULL, headings = NULL, ...){
 
   if(is.null(label))  {label = grouping.factor}
 

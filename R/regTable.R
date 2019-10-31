@@ -17,7 +17,7 @@
 
 regTable <- function(append.table = FALSE, data = NULL, moderators = NULL, es = NULL, vi = NULL,
                      study.id = NULL, labels = NULL ,modelweights = "CORR", ...){
-  if(length(moderators) != length(labels)) {warning('Length of labels does not match length of moderators')}
+
   z = 0
   for(i in moderators){
     z <- z + 1
