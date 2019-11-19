@@ -26,6 +26,7 @@ subGroups <- function(append.table = FALSE, data = NULL, grouping.factor = NULL,
   if(!isFALSE(append.table)) {newTable <- rbind(append.table, subTitle(headings = headings, type = type, label = label, ...))  }
 
   subgroups <- unique(data[,grouping.factor])
+  subgroups <- subgroups[!is.na(subgroups)]
 
   for(i in subgroups){
     df <- data[data[,grouping.factor] == i,]
