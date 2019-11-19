@@ -1,6 +1,12 @@
 # metaTables
 Development of the metaTables package
 
+To install:
+
+`devtools::install_github("kitdouble/metaTables")`
+
+`library(metaTables)`
+
 ## Vignettes
 
 Create a new sub-groups table with all levels of a variable
