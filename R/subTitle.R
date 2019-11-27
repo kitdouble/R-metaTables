@@ -28,9 +28,9 @@ subTitle <- function(label, type = NULL, headings = NULL, append.table = FALSE){
   if(!is.null(headings)) {
     headings = headings
   } else if(type == "MD") {
-    headings = c("label", "n","k","g","SE","i2","p")
+    headings = c("label", "n","k","ES","SE","i2","p")
   } else if (type == "cor") {
-    headings = c("label", "n","k","rho","SE","i2","p")
+    headings = c("label", "n","k","ES","SE","i2","p")
   }
 
 
