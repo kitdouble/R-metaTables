@@ -28,14 +28,14 @@ subTitle <- function(label, type = NULL, headings = NULL, append.table = FALSE){
   if(!is.null(headings)) {
     headings = headings
   } else if(type == "MD") {
-    headings = c("label", "n","k","ES","SE","i2","p")
+    headings = c("label", "n","k","ES","SE","ciL","ciU","i2","p")
   } else if (type == "cor") {
-    headings = c("label", "n","k","ES","SE","i2","p")
+    headings = c("label", "n","k","ES","SE","ciL","ciU","i2","p")
   }
 
 
 
-  newRow <- as.data.frame(cbind(label, NA, NA, NA, NA, NA, NA))
+  newRow <- as.data.frame(cbind(label,NA,NA, NA, NA, NA, NA, NA, NA))
   names(newRow) <- headings
   return(newRow)
 

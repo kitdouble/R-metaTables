@@ -37,6 +37,9 @@ subGroups <- function(append.table = FALSE, data = NULL, grouping.factor = NULL,
     n <- length(unique(ma$study_orig_id))
     k <- length(ma$study_orig_id )
     g <- round(ma$reg_table$b.r,2)
+    ciL <- round(ma$reg_table$CI.L,2)
+    ciU <- round(ma$reg_table$CI.U,2)
+
     se <- round(ma$reg_table$SE,2)
     p <- round(ma$reg_table$prob,3)
     p <- ifelse(p == 0,"<.001",p)
@@ -44,7 +47,7 @@ subGroups <- function(append.table = FALSE, data = NULL, grouping.factor = NULL,
     I <- paste(round(ma$mod_info$I.2[1],2),"%", sep="")
 
 
-    newRow <- as.data.frame(cbind(i,n,k,g,se,I,p))
+    newRow <- as.data.frame(cbind(i,n,k,g,se,ciL,ciU,I,p))
     if(exists("newTable")) {names(newRow) <- names(newTable)}
 
 
