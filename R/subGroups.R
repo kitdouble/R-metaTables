@@ -32,7 +32,11 @@ subGroups <- function(append.table = FALSE, data = NULL, grouping.factor = NULL,
     df <- data[data[,grouping.factor] == i,]
 
 
-    ma <- robu(df[,es] ~ 1, studynum = df[,study.id], data = df, var.eff.size = vi, modelweights = modelweights)
+     effect = df[,es]
+    studyName = df[,study.id]
+    varianceES = df[,vi]
+
+    ma <- robu(effect ~ 1, studynum = studyName, data = df, var.eff.size = varianceES, modelweights = modelweights)
 
     n <- length(unique(ma$study_orig_id))
     k <- length(ma$study_orig_id )
